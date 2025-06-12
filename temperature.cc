@@ -10,6 +10,7 @@
 #include "snn-core/env/options.hh"
 #include "snn-core/file/standard/error.hh"
 #include "snn-core/file/standard/out.hh"
+#include "snn-core/fmt/print.hh"
 #include "snn-core/fmt/fn/format.hh"
 #include "snn-core/fn/common.hh"
 #include "snn-core/pair/common.hh"
