@@ -73,7 +73,7 @@ namespace snn::app
 
             if (show_all_)
             {
-                strbuf formatted{container::reserve, 500};
+                strbuf formatted{init::reserve, 500};
                 temperatures.each(fn::unpack{fmt::fn::format{"{}: {}°\n", formatted}});
                 file::standard::out{} << formatted;
             }
@@ -133,7 +133,7 @@ namespace snn
 
         if (show_help)
         {
-            strbuf usage{container::reserve, 250};
+            strbuf usage{init::reserve, 250};
 
             usage << "Write system temperature (CPU/ACPI) to stdout.\n\n"
                   << "Only the highest temperature is written,"
