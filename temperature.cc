@@ -120,7 +120,7 @@ namespace snn
                               {"all", 'a'},
                               {"help", 'h'},
                           },
-                          promise::is_sorted};
+                          assume::is_sorted};
 
         if (!opts)
         {
