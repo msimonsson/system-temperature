@@ -74,7 +74,7 @@ namespace snn::app
             if (show_all_)
             {
                 strbuf formatted{init::reserve, 500};
-                temperatures.each(fn::unpack{fmt::fn::format{"{}: {}°\n", formatted}});
+                temperatures.each(fn::unpack{fmt::fn::format_append{"{}: {}°\n", formatted}});
                 file::standard::out{} << formatted;
             }
             else
